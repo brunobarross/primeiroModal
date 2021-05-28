@@ -1,0 +1,53 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__text,
+.modal__content {
+  flex: 1;
+}
+
+.modal__content {
+  position: relative;
+}
+
+#playClick {
+  width: 70px;
+  position: absolute;
+  top: 40%;
+  left: 27%;
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: green;
+  display: block;
+  position: absolute;
+  padding: 10px;
+}
+
+.modal_container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  background: white;
+  height: 400px;
+  padding-bottom: 20px;
+}
+
+.modal_container.aberto {
+  display: flex;
+}
